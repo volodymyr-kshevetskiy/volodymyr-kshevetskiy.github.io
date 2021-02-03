@@ -1,0 +1,1090 @@
+@import './base/base';
+@import './fonts.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$title-font: 'Montserrat-Bold';
+$second-font: 'Roboto';
+$bg-red:  #FF4E50;
+
+
+
+
+.container{
+    width: 1440px;
+    height: 100%;
+    
+
+    .header{
+        width: 100%;
+        height: 700px;
+        background-image: url(./images/Background.png);
+        background-size: cover;
+        padding-top: 46px;
+        
+        
+
+        .up{
+            width: 100%;
+            height: 36px;
+            display: flex;
+            justify-content: start;
+            
+
+            .M20B{
+                font-family: $title-font;
+                font-size: 20px;
+                font-weight: bold;
+                display: block;
+                color: white;
+                margin-left: 248px;
+                margin-right: 596px;
+                
+            }
+    
+            .log{
+                width: 200px;
+                         
+                
+    
+                .login{
+                    text-decoration: none;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    color: white;
+                    margin-right: 19px;
+                    
+                }
+                .signup{
+                    @extend .login;
+                    padding: 10px 17px 9px 18px;
+                    border: 2px solid white;
+                    border-radius: 40px;
+                    margin-right: 0;
+                      
+                }
+            }
+
+        }
+        .main-1{
+            width: 470px;
+            height: 126px;
+            margin-top: 147.5px;
+            margin-left: 485px;
+            font-family: $title-font;
+            font-size: 52px;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 63px;
+        }
+
+        .main-2{
+            width: 500px;
+            height: 25px;
+            margin-top: 28.5px;
+            margin-left: 522px;
+            font-family: $second-font;
+            font-size: 24px;
+            font-weight: normal;
+            color: #F7F3F2;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 24.5px;
+        }
+
+        .main-3{
+            width: 225px;
+            height: 40px;
+            background-color: $bg-red;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            margin-left: 627.5px;
+            margin-top: 33px;
+            
+            
+        }
+        .link{
+            text-decoration: none;
+            font-family: $title-font;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding-left: 19.5px;
+            
+        }
+       
+    }
+    .how-works{
+        width: 940px;
+        height: 461px;
+        margin: 95px 250px 0 250px;
+        
+
+        .how-text{
+            width: 342px;
+            height: 32px;
+            font-family: $title-font;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            margin-left: 299px;
+            margin-bottom: 35px;
+        }
+
+        .how-blocks{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+
+            .block-1{
+                width: 300px;
+                height: 100%;
+                background-image: url(./images/Step-1.png);
+                background-size: cover;
+
+                .step-1{
+                    width: 70px;
+                    height: 20px;
+                    background-color: $bg-red;
+                    border-radius: 40px;
+                    margin: 219px 0 0 25px;
+                    font-family: 'Montserrat';
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    line-height: 12px;
+                    color: white;
+                    text-align: center;
+                    padding-top: 5px;
+                }
+                .step-1-text{
+                    width: 250px;
+                    height: 58px;
+                    margin: 15px 0 0 25px;
+                    font-family: $title-font;
+                    font-size: 24px;
+                    line-height: 26px;
+                    color: white;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                .step-1-text-2{
+                    width: 250px;
+                    height: 57px;
+                    margin: 10px 0 0 25px;
+                    font-family: $second-font;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #E3E3E3;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+            }
+
+            .block-2{
+                @extend .block-1;
+                background-image: url(./images/Step-2.png);
+                
+
+                .step-2{
+                    @extend .step-1;
+                    
+                    margin: 255px 0 0 25px;
+                    
+                }
+                .step-2-text{
+                    width: 250px;
+                    height: 29px;
+                    margin: 14px 0 0 25px;
+                    font-family: $title-font;
+                    font-size: 24px;
+                    line-height: 14px;
+                    color: white;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                .step-2-text-2{
+                    width: 250px;
+                    height: 57px;
+                    margin: 9px 0 0 25px;
+                    font-family: $second-font;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #E3E3E3;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+            }
+
+            .block-3{
+                @extend .block-1;
+                
+                background-image: url(./images/Step-3.png);
+                
+
+                .step-3{
+                    @extend .step-1;
+                }
+                .step-3-text{
+                    @extend .step-1-text;
+                }
+                .step-3-text-2{
+                    @extend .step-1-text-2;
+                }
+
+            }
+        }
+    }
+    .meet-blocks{
+        width: 941px;
+        height: 361px;
+        margin: 95px 249px 0 250px;
+        
+        .meet-text{
+            width: 491px;
+            height: 32px;
+            margin-left: 226px;
+            font-family: $title-font;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            
+        }
+        .meet-people{
+            width: 100%;
+            height: 224px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+            
+
+            .people-1{
+                width: 221px;
+                height: 205px;
+                
+                .ava-1{
+                    width: 120px;
+                    height: 120px;
+                    background-image: url(./images/Photo-1.png);
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-left: 51px;
+                }
+                .nota{
+                    width: 34px;
+                    height: 34px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bg-red;
+                    box-sizing: border-box;
+                    border: 3px solid white;
+                    background-size: cover;
+                    border-radius: 50%;
+                    position: absolute;
+                    margin-left: 137px;
+                    margin-top: -37px;
+                }
+                .ava-1-text{
+                    width: 100%;
+                    height: 18px;
+                    font-family: $title-font;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #444444;
+                    margin-top: 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                .ava-1-about{
+                    width: 221px;
+                    height: 38px;
+                    font-family: $second-font;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-content: flex-end;
+                    color: #666666;
+                    margin-top: 12px;
+
+                }
+
+            }
+            .people-2{
+                @extend .people-1;
+                
+                .ava-1{
+                    width: 120px;
+                    height: 120px;
+                    background-image: url(./images/Photo-2.png);
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-left: 51px;
+                }
+                
+            }
+            .people-3{
+                @extend .people-1;
+                
+                .ava-1{
+                    width: 120px;
+                    height: 120px;
+                    background-image: url(./images/Photo-3.png);
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-left: 51px;
+                }
+                
+            }
+            .people-4{
+                @extend .people-1;
+                
+                .ava-1{
+                    width: 120px;
+                    height: 120px;
+                    background-image: url(./images/Photo-4.png);
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-left: 51px;
+                }
+                
+            }
+        }
+        .see-other{
+            width: 180px;
+            height: 40px;
+            border: 2px solid $bg-red;
+            border-radius: 40px;
+            margin-left: 381px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $bg-red;
+                font-family: $title-font;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            
+        }
+    }
+    .discover{
+        width: 940px;
+        height: 1031px;
+        margin: 95px 0 0 250px;
+        
+        .discover-text{
+            width: 413px;
+            height: 32px;
+            margin-left: 264px;
+            font-family: $title-font;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+        }
+        .discover-photo{
+            width: 100%;
+            height: 999px;
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .discover-1{
+                width: 300px;
+                height: 310px;
+                background-color: white;
+                border-radius: 4px;
+                
+            }
+            .discover-2{
+                width: 620px;
+                height: 310px;
+                background-color: white;
+                border-radius: 4px;
+            }
+        }
+    }
+    .create{
+        width: 482px;
+        height: 158px;
+        margin: 95px 0 100px 480px;
+        
+        .create-text{
+            width: 358px;
+            height: 32px;
+            font-family: $title-font;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            margin-left: 62.5px;
+            margin-top: -6px;
+        }
+        .create-hi{
+            width: 415px;
+            height: 24px;
+            font-family: $second-font;
+            font-size: 18px;
+            line-height: 14px;
+            color: #666666;
+            margin: 43px 0 0 35px;
+            text-align: center;
+        }
+        .create-search{
+            width: 482px;
+            height: 40px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+
+            .enter{
+                width: 299px;
+                height: 100%;
+                border: 1px solid #D4D4D4;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                padding-left: 14.63px;
+                font-family: $second-font;
+                font-size: 14px;
+                color: #999999;
+            }
+            .submit{
+                width: 172.12px;
+                height: 100%;
+                background-color: $bg-red;
+                border: 1px solid $bg-red;
+                border-radius: 40px;
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                font-family: $title-font;
+                font-size: 14px;
+                color: white;
+                line-height: 17.07px; 
+            }
+        }    
+    }
+    .footer{
+        width: 100%;
+        height: 224px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        .f-dreamshare{
+            width: 490px;
+            height: 100%;
+            padding-left: 249px;
+            padding-top: 38px;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            line-height: 20px;
+            color: $bg-red;
+        }
+        .f-company{
+            padding-top: 40px;
+            font-family: $title-font;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+
+            .links{
+                display: block;
+                text-decoration: none;
+                font-family: $second-font;
+                font-size: 14px;
+                line-height: 26px;
+                color: #999999;
+            }
+        }
+        .f-partners{
+            width: 64px;
+            height: 100%;
+            padding-top: 40px;
+            margin-left: 125px;
+            font-family: $title-font;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+            
+        }
+        .f-logo{
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: $title-font;
+            letter-spacing: 1px;
+            font-size: 10px;
+            line-height: 12.19px;
+            color: #CCCCCC;
+            padding-top: 40px;
+            padding-left: 287px;
+            text-align: right;
+            
+            .img-top-7{
+                margin-top: 7px;
+            }
+
+          
+        }
+    }   
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 768px;
+        height: 100%;
+        .header{
+            width: 100%;
+            height: 700px;
+            background-image: url(./images/Background-2.png);
+            background-size: cover;
+            padding-top: 46px;
+
+            .up{
+                width: 100%;
+                height: 36px;
+                display: flex;
+                justify-content: start;
+                
+    
+                .M20B{
+                    font-family: $title-font;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: block;
+                    color: white;
+                    margin-left: 48px;
+                    margin-right: 365px;
+                }
+                
+    
+            }
+            .main-1{
+                margin-left: 149px;
+                
+            }
+    
+            .main-2{
+                
+                margin-left: 186px;
+                
+            }
+    
+            .main-3{
+                
+                margin-left: 272px;
+                 
+            }
+        }
+        .how-works{
+            width: 748px;
+            height: 461px;
+            margin: 95px 10px 0 10px;
+            
+    
+            .how-text{
+                width: 289px;
+                height: 27px;
+                font-size: 22px;
+                margin-left: 230px;
+            }
+            .how-blocks{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: space-between;
+    
+                .block-1{
+                    width: 236px;
+                    height: 100%;
+                    background-image: url(./images/Step-1.png);
+                    background-size: cover;
+    
+                    
+                    
+                    .step-1-text-2{
+                        width: 196px;
+                        
+                    }
+    
+                }
+    
+                .block-2{
+                    width: 236px;
+                    background-image: url(./images/Step-2.png);
+                    
+                    
+                    .step-2-text-2{
+                        width: 196px;
+                        
+                    }
+                    
+    
+                }
+    
+                .block-3{
+                    width: 236px;
+                    background-image: url(./images/Step-3.png);
+                    
+    
+                    
+                    .step-3-text-2{
+                        width: 196px;
+                        
+                    }
+                    
+                
+                }
+            }
+    
+        }
+        .meet-blocks{
+            width: 492px;
+            height: 605px;
+            margin: 95px 138px 0 138px;
+            
+            .meet-text{
+                width: 416px;
+                height: 27px;
+                margin-left: 38px;
+                font-size: 22px;
+                line-height: 26.82px;
+                
+                
+            }
+            .meet-people{
+                width: 100%;
+                height: 224px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 35px;
+                flex-wrap: wrap;
+                
+    
+                .people-1{
+                    width: 236px;
+                    height: 205px;
+                    margin-bottom: 35px;
+                 
+                }
+                
+            }
+        
+            .see-other{
+            
+                
+                margin-left: 156px;
+                margin-top: 276px;
+                
+            }
+            
+        }
+        .discover{
+            width: 748px;
+            margin: 95px 0 0 10px;
+
+           .discover-text{
+                width: 350px;
+                height: 27px;
+                margin-left: 199px;
+                font-size: 22px;
+                
+            }
+            .discover-photo{
+                width: 100%;
+                height: 970px;
+                margin-top: 35px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+    
+                .discover-1{
+                    width: 236px;
+                    
+                    
+                    
+                    
+                }
+                .discover-2{
+                    width: 492px;
+                    
+                }
+            }
+    
+        }
+        .create{
+            width: 482px;
+            height: 158px;
+            margin: 95px 0 100px 143px;
+        }
+
+        .footer{
+            
+           flex-wrap: nowrap;
+
+            .f-dreamshare{
+                
+                padding-left: 39px;
+                
+                margin-right: 108px;
+                
+            }
+            
+           
+            .f-logo{
+                
+                padding-left: 81px;
+             
+            }
+    
+        }
+     
+    }
+}
+@media screen and (max-width: 321px){
+    .container{
+        width: 321px;
+
+        .header{
+            width: 321px;
+            height: 540px;
+            background-image: url(./images/Background-3.png);
+            background-size: cover;
+            padding-top: 30px;
+            
+            .up {
+                
+                display: flex;
+                justify-content: start;
+
+                .M20B{
+                    
+                    position: absolute;
+                    margin-left: 86px;
+                    margin-right: 0px;
+                    margin-top: 153px;
+                    
+                }
+                .log{
+                    margin-left: 84px;
+                }
+            }
+            .main-1{
+                width: 272px;
+                height: 74px;
+                margin-top: 147.5px;
+                margin-left: 24px;
+                font-size: 30px;
+                line-height: 36.57px;
+            }
+
+            .main-2{
+                width: 280px;
+                height: 49px;
+                margin-top: 5.5px;
+                margin-left: 20px;
+                font-size: 18px;
+                font-weight: normal;
+                
+            }
+            .main-3{
+                width: 280px;
+                height: 40px;
+                margin-left: 21px;
+                margin-top: 15px;
+              
+            }
+            .link{
+                padding-left: 46.5px;
+            }
+    
+        }
+        .how-works{
+            width: 300px;
+            height: 781px;
+            margin: 35px 5px 0 5px;
+            
+
+            .how-text{
+                width: 289px;
+                height: 27px;
+                font-size: 22px;
+                line-height: 26.82px;
+                margin-left: 16px;
+                margin-bottom: 15px;
+                
+            }
+            .how-blocks{
+                width: 100%;
+                height: 740px;
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+
+                .block-1{
+                    width: 300px;
+                    height: 240px;
+                    margin-left: 10px;
+                    
+                    .step-1{
+                        margin: 64px 0 0 20px;
+                        
+                    }
+                }
+                .block-2{
+                    width: 300px;
+                    height: 240px;
+                    margin-left: 10px;
+                    
+                    .step-2{
+                        margin: 64px 0 0 20px;
+                        
+                    }
+                }
+                .block-3{
+                    width: 300px;
+                    height: 240px;
+                    margin-left: 10px;
+                    .step-3{
+                        margin: 64px 0 0 20px;
+                        
+                    }
+                }
+
+            }
+            
+        }
+        .meet-blocks{
+            width: 300px;
+            height: 100%;
+            margin: 36px 10px 0 10px;
+
+            .meet-text{
+                width: 280px;
+                height: 54px;
+                margin-left: 10px;
+                font-size: 22px;
+                line-height: 26.82px;
+                text-align: center;
+            }
+
+            .meet-people{
+                width: 100%;
+                height: 868px;
+                display: flex;
+                justify-content: start;
+                margin-top: 14px;
+                padding-left: 32px;
+                
+    
+                .people-1{
+                    margin-bottom: 0;
+
+                    
+                }
+            }
+            .see-other{
+                width: 280px;
+                margin-left: 10px;
+                margin-top: 36px;
+            }
+    
+        }
+        .discover{
+            width: 300px;
+            height: 100%;
+            margin: 46px 0 0 10px;
+
+            .discover-text{
+                width: 280px;
+                height: 54px;
+                margin-left: 10px;
+                font-size: 22px;
+                line-height: 26.82px;
+                text-align: center;
+            }
+            .discover-photo{
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .discover-1 {
+                    width: 300px;
+                    height: 120px;
+                    margin-bottom: 10px;
+                    
+                    
+
+                }
+                .discover-2{
+                    width: 300px;
+                    height: 120px;
+                    margin-bottom: 10px;
+                    
+                }
+    
+            }
+    
+        }
+        .create{
+            width: 100%;
+            height: 192px;
+            margin: 25px 0 40px 0;
+
+            .create-text{
+                width: 280px;
+                height: 54px;
+                font-size: 22px;
+                line-height: 26.82px;
+                text-align: center;
+                margin-left: 13px;
+            }
+            .create-hi{
+                width: 100%;
+                height: 24px;
+                margin: 9px 0 0 0;
+                
+            }
+            .create-search{
+                width: 280px;
+                height: 90px;
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-left: 13px;
+    
+                .enter{
+                    width: 280px;
+                    height: 40px;
+                }
+                .submit{
+                    width: 280px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 87px;
+                }
+            } 
+        }
+        .footer{
+            width: 320px;
+            height: 226px;
+            margin-bottom: 36px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .f-dreamshare{
+                width: 119px;
+                height: 20px;
+                padding-left: 101px;
+                padding-top: 19px;
+                
+            }
+            .f-company {
+                width: 280px;
+                height: 69px;
+                padding-top: 0px;
+                padding-left: 125px;
+                
+
+
+
+            }
+            .ul{
+                width: 280px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-left: -100px;
+            }
+            .links{
+                display: flex;
+                justify-content: space-around;
+                text-decoration: none;
+                font-family: 'Roboto';
+                margin-right: 10px;
+            }
+
+            .f-partners{
+                
+                width: 64px;
+                height: 17px;
+                padding-top: 0px;
+                margin-left: 125px;
+                
+            }
+            .f-logo{
+                width: 100%;
+                height: 24px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Montserrat-Bold';
+                letter-spacing: 1px;
+                font-size: 10px;
+                line-height: 12.19px;
+                color: #CCCCCC;
+                padding-top: 0px;
+                padding-left: 0px;
+                text-align: center;
+                margin-left: 0px;
+                margin-top: 200px;
+                
+                
+                .img-top-7{
+                    margin-top: 7px;
+                    margin-left: 100px;
+                    margin-bottom: 36px;
+                }
+            }
+    
+    
+
+           
+    
+    
+        }
+    
+
+    
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
